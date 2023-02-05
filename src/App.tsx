@@ -1,13 +1,15 @@
-import React from 'react';
-import Header from './components/header';
 import './App.css';
+import Root from './components/Layout/Root';
+import List from './features/post/List';
+import 'bulma/css/bulma.min.css';
+
 
 function App() {
-  return (
-    <div className="App">
-        <Header></Header>
-    </div>
-  );
+    return (
+        <Root>
+            <List></List>
+        </Root>
+    );
 }
 
 export default App;
